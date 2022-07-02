@@ -1,0 +1,29 @@
+.flexbox-list{
+    display: flex;
+    background-color: antiquewhite;
+    flex-wrap: wrap;
+    gap:5px
+
+}
+.flexbox-item{
+  flex: 1 1 25%;
+    margin: 10px; 
+    text-align: center;
+    background-color: blanchedalmond;
+}
+img{
+    width: 500px;
+}
+
+@media all and (max-width:1024px) and (min-width: 600px){
+   
+    .flexbox-item {
+        flex: 1 1 33,33%;
+    }
+}
+@media all and (max-width:600px){
+   
+    .flexbox-item {
+        flex: 1 1 100%;
+    }
+}

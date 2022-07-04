@@ -117,7 +117,7 @@ input{
     color:white;
     padding-bottom: 6,5rem;
     padding-top: 5,5rem;
-    
+   
 }
 .black >div {
 flex:1;
@@ -148,16 +148,20 @@ h1{
     font-size: 0.95rem;
     padding:0.9rem 1.4rem;
 }
-
-.black-right img{
-  
-    cursor: pointer;
-    padding: 6.5rem 2.5rem;
+.black-right{
+    position: relative;
     
 }
-
-.playbutton {
+.black-right img{
+  position: absolute;
     
+    
+}
+.new{
+    position: absolute;
+}
+.playbutton {
+    position: relative;
     text-align: center;
 }
 .playbutton img{

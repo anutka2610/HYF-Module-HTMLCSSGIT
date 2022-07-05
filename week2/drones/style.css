@@ -1,29 +1,82 @@
+h1{
+    text-align: center;
+}
+h2{
+    margin-left: 40px;
+}
 .flexbox-list{
     display: flex;
-    background-color: antiquewhite;
+   justify-content: space-between;
     flex-wrap: wrap;
-    gap:5px
-
+    
 }
 .flexbox-item{
-  flex: 1 1 25%;
-    margin: 10px; 
+    
+    border: solid 1px gray;
     text-align: center;
-    background-color: blanchedalmond;
+    margin-bottom: 15px;
+    padding: 5px;
+    
 }
-img{
-    width: 500px;
+li{list-style: none;
+
 }
 
-@media all and (max-width:1024px) and (min-width: 600px){
-   
-    .flexbox-item {
-        flex: 1 1 33,33%;
-    }
+img{
+   width: 100%;
 }
-@media all and (max-width:600px){
-   
-    .flexbox-item {
-        flex: 1 1 100%;
+@media screen and (min-width:1024px){
+    .flexbox-item{
+        width: calc(25% - 20px);}
+    .flexbox-item:nth-child(1){
+        width: calc(50% - 20px);}
+    .grid-item{
+grid-column: span 3;
     }
+    .grid-item:nth-child(1){
+        grid-column: span 6;
+    }
+    
+    
 }
+/*Flexbox implements for tablets */
+@media screen and (min-width:600px) and (max-width:1023px){
+.flexbox-item{
+    width: 31%;
+    
+}  
+.flexbox-item:nth-child(1){
+    width: calc(50% - 20px);} 
+    .flexbox-item:nth-child(2){
+        width: calc(50% - 20px);}
+.grid-item{
+    grid-column: span 4;
+}
+.grid-item:nth-child(1){
+    grid-column: span 6;
+}
+.grid-item:nth-child(2){
+    grid-column: span 6;
+}
+}
+@media screen and (max-width:599px){
+    .flexbox-item{
+        width: 100%;  
+        }
+    .grid-item{grid-column: span 12;}
+    }
+
+    .grid-list{
+        display:grid;
+        grid-template-columns: repeat(12,1fr);
+        gap: 10px; 
+       
+    }
+    .grid-item{
+     border: solid 1px gray;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 5px;
+    
+    }
+

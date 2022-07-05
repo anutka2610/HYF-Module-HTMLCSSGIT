@@ -4,6 +4,9 @@ h1{
 h2{
     margin-left: 40px;
 }
+h3{
+    text-align: center;
+}
 .flexbox-list{
     display: flex;
    justify-content: space-between;
@@ -13,7 +16,7 @@ h2{
 .flexbox-item{
     
     border: solid 1px gray;
-    text-align: center;
+    text-align: left;
     margin-bottom: 15px;
     padding: 5px;
     
@@ -25,6 +28,8 @@ li{list-style: none;
 img{
    width: 100%;
 }
+
+/*implements for LopTop */
 @media screen and (min-width:1024px){
     .flexbox-item{
         width: calc(25% - 20px);}
@@ -39,7 +44,7 @@ grid-column: span 3;
     
     
 }
-/*Flexbox implements for tablets */
+/* implements for tablets */
 @media screen and (min-width:600px) and (max-width:1023px){
 .flexbox-item{
     width: 31%;
@@ -59,6 +64,7 @@ grid-column: span 3;
     grid-column: span 6;
 }
 }
+/*Flexbox implements for phone */
 @media screen and (max-width:599px){
     .flexbox-item{
         width: 100%;  
@@ -74,7 +80,7 @@ grid-column: span 3;
     }
     .grid-item{
      border: solid 1px gray;
-    text-align: center;
+    text-align: left;
     margin-bottom: 15px;
     padding: 5px;
     

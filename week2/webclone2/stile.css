@@ -4,6 +4,9 @@ body{
     font-size: 16px;
     color: rgb(36, 30, 18);
 }
+i::before{
+    padding-left: 7px;
+}
 
 header{
     font-size: 0.88rem;

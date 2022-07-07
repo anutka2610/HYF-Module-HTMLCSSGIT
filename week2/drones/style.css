@@ -10,8 +10,7 @@ h3{
 .flexbox-list{
     display: flex;
    justify-content: space-between;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 .flexbox-item{
     
@@ -19,10 +18,8 @@ h3{
     text-align: left;
     margin-bottom: 15px;
     padding: 5px;
-    
 }
 li{list-style: none;
-
 }
 
 img{
@@ -40,15 +37,12 @@ grid-column: span 3;
     }
     .grid-item:nth-child(1){
         grid-column: span 6;
-    }
-    
-    
+    } 
 }
 /* implements for tablets */
 @media screen and (min-width:600px) and (max-width:1023px){
 .flexbox-item{
     width: 31%;
-    
 }  
 .flexbox-item:nth-child(1){
     width: calc(50% - 20px);} 
@@ -76,13 +70,11 @@ grid-column: span 3;
         display:grid;
         grid-template-columns: repeat(12,1fr);
         gap: 10px; 
-       
     }
     .grid-item{
      border: solid 1px gray;
     text-align: left;
     margin-bottom: 15px;
     padding: 5px;
-    
     }
 
